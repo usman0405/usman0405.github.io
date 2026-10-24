@@ -6,30 +6,39 @@
     <title> My Website</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
-        header {
+body {
+    @apply text-center bg-slate-50 text-slate-900;
+}
+
+header {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%] bg-indigo-900;
+}
+
+header h1 {
+    @apply text-5xl md:text-8xl font-sans font-bold uppercase tracking-tighter mb-8 text-white;
+}
+
+header h2 {
+    @apply text-3xl md:text-5xl font-serif italic leading-snug text-indigo-100;
+}
+
+section {
     @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
 }
 
-section {   
-    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+section p {
+    @apply mb-6 text-xl md:text-2xl font-medium leading-relaxed tracking-wide;
 }
-body { @apply text-center }
 
-header { @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%]; }
+section a {
+    @apply text-indigo-700 underline hover:text-indigo-900;
+}
 
-h1 { @apply tracking-tighter text-5xl md:text-8xl mb-8 }
+footer {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%] text-sm bg-slate-900 text-slate-100;
+}
+</style>
 
-header h2 { @apply text-3xl md:text-5xl italic}
-
-section { @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%]; }
-
-section h2 { @apply mt-8 tracking-wider; }
-
-section h3 { @apply mt-8 mb-6 text-2xl md:text-3xl uppercase font-bold uppercase; }
-
-section p { @apply mb-6 text-xl md:text-2xl; }
-
-    </style>
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">    
@@ -37,12 +46,19 @@ section p { @apply mb-6 text-xl md:text-2xl; }
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">    
 <link rel="manifest" href="assets/img/favicons/site.webmanifest">
 
+<!-- Usman Ali 75509 -->
 
-    
+
 </head>
 <body>
+
+    <header>
     <h1>Web/UI Designer</h1>
-    <p> Hello My Name is Usman Ali</p>
+    <h2> Hello My Name is Usman Ali</h2>
+    </header>
+
+    <main>
+        <section>
     <img src="assets/img/pexels-alicia-christin-gerald-1447380217-37880001.jpg" alt="photo">
     <p> This Website Was Created to showcase some of my recent web design work.</p>
     <p><a href="exercises/page-1.html"> A Tale of Two Cities </a></p>
@@ -52,5 +68,11 @@ section p { @apply mb-6 text-xl md:text-2xl; }
     <p><a href="exercises/page-5.html">Ireland's Top Five Visitor Attractions</a></p>
     <p><a href="exercises/top selling laptops.html">Best selling laptops</a></p>
     <p><a href="exercises/best soccer player.html">Best soccer players</a></p>
+        </section>
+    </main>
+<footer>
+    <p>&copy; 2026 Usman Ali</p>
+</footer>
+
 </body>
 </html>

@@ -11,64 +11,121 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
 
-header {
-    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+header h1 {
+    @apply text-5xl md:text-7xl font-bold uppercase tracking-tight text-center mb-4;
 }
 
+header h2 {
+    @apply text-2xl md:text-3xl font-serif italic text-center;
+}
+
+section h2 {
+    @apply text-3xl font-semibold mt-6 mb-4;
+}
+
+section p {
+    @apply text-lg leading-relaxed mb-4;
+}
+
+header {
+   @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%] bg-slate-900 text-white;
+}
 section {   
     @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
 }
+
+footer {
+   @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%] text-center bg-slate-900 text-slate-100;
+}
+
+footer a {
+   @apply underline hover:text-white;
+}
     </style>
 
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="../assets/img/favicons/site.webmanifest">
+   
+<!-- Usman Ali 75509 -->
 
 </head>    
     
 <body>
 
 
- <!-- Hero block -->
     <header>
         <h1>Big heading</h1>
         <h2>Smaller sub-heading</h2>
     </header>
 
-    <!-- Main content of web page in sections -->
     <main>
-        <section>
+        <section class="bg-sky-100 text-sky-950">
             <h2>Smaller Heading</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facere, tenetur ad, fugit voluptates ipsa saepe dignissimos dolorem nemo fugiat sunt eum quaerat? Omnis unde obcaecati dolore inventore quae quidem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facere, tenetur ad, fugit voluptates ipsa saepe dignissimos dolorem nemo fugiat sunt eum quaerat? Omnis unde obcaecati
+            dolore inventore quae quidem!
             </p>
 
         </section>
 
-        <section>
+        <section class="bg-indigo-100 text-indigo-950">
             <h2>Smaller Heading</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facere, tenetur ad, fugit voluptates ipsa saepe dignissimos dolorem nemo fugiat sunt eum quaerat? Omnis unde obcaecati dolore inventore quae quidem!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facere, tenetur ad, fugit voluptates ipsa saepe dignissimos dolorem nemo fugiat sunt eum quaerat? Omnis unde obcaecati dolore inventore quae quidem!
             </p>
 
         </section>
 
-        <section>
+        <section class="bg-emerald-100 text-emerald-950">
             <h2>Smaller Heading</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
 
-            <p><a href="../index.html">Back to Home page</a></p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
+
         </section>
     
+
+     <section class="bg-amber-100 text-amber-950">
+            <h2>Smaller Heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
+
+
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facere, tenetur ad, fugit voluptates ipsa saepe dignissimos dolorem nemo fugiat sunt eum quaerat? Omnis unde obcaecati dolore inventore quae quidem!
+            </p>
+
+        </section>
+
+        <section class="bg-rose-100 text-rose-950">
+            <h2>Smaller Heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
+
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facere, tenetur ad, fugit voluptates ipsa saepe dignissimos dolorem nemo fugiat sunt eum quaerat? Omnis unde obcaecati dolore inventore quae quidem!
+            </p>
+
+        </section>
+
+        <section class="bg-slate-800 text-white">
+            <h2>Smaller Heading</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
+
+        </section>
+        
     </main>
-    <!-- main content ends here -->
 
-
-    </body>
-    
-    </html>
-    
-    
-    
+     <footer>
+        <p><a href="../index.html">Back to Home page</a></p>
+    </footer>
+ </body>
+</html>
