@@ -6,10 +6,22 @@
 
     <title>Vincent van Gogh</title>
     <meta name="description" content="The Dutch post-impressionist whose works are characterised by bold colours and dramatic, impulsive and expressive brushwork.">
-
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <style type="text/tailwindcss">
+
+body {
+    font-family: 'Lora', serif;
+}
+
+h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+}
+
 header {
         @apply flex flex-col justify-around items-center w-full mx-auto
             bg-blue-800
@@ -48,10 +60,17 @@ header {
        underline-offset-4
        hover:text-red-700
        hover:decoration-red-700
-       focus:text -red-700
+       focus:text-red-700
        focus:decoration-red-700
        transition-colors duration-300;
 }
+    footer {
+        @apply bg-blue-800 px-12 lg:px-60 py-8 text-center;
+    }
+
+    footer a {
+        @apply text-yellow-100 decoration-yellow-100 hover:text-white hover:decoration-white focus:text-white;
+    }
 
     </style>
     
@@ -65,8 +84,7 @@ header {
 </head>
 
 
-<body>
-
+<body id="top-of-page">
     <header>
         <h1>Vincent van Gogh</h1>
 
@@ -78,7 +96,9 @@ header {
 
     <section>
 
-        <h3>The Arles Years</h3>
+        <p>Jump to: <a href="#arles">The Arles Years</a> | <a href="#life">Life, Suffering and Death</a></p>
+
+        <h3 id="arles">The Arles Years</h3>
         <p>Van Gogh's two years at Arles in France (1888–89) were one of his most artistically productive periods. He was enchanted by the local countryside and light; his works from this period are rich in yellow, ultramarine and mauve. Among the most well-known works of that time is an oil painting of his rented room, entitled <i>Bedroom in Arles</i>.</p>
 
 
@@ -98,8 +118,7 @@ header {
 <p><b>On view</b>: <a href="https://www.vangoghmuseum.nl/en/collection/s0032V1962"
     target="_blank">Vincent van Gogh Museum, Amsterdam</a></p>   
 
-        <h3>Life, Suffering and Death</h3>
-        
+        <h3 id="life">Life, Suffering and Death</h3>        
 
         <p>After his time at Arles, van Gogh moved to a former monastery at nearby Saint-Remy. The building's garden and surrounding countryside became the main subjects of his paintings. Some of his works from this time are characterised by swirls, such as <i>The Starry Night</i>.</p>
 
@@ -120,9 +139,16 @@ header {
 <p><b>On view</b>: <a href="https://www.moma.org/collection/works/79802"
     target="_blank">The Museum of Modern Art, New York</a></p>  
 
+    
+    <p><a href="#top-of-page">Return to top of page</a></p>
 
     </section>
 
     </main>
+
+<footer>
+    <p><a href="../index.html">Back to Home page</a></p>
+</footer>
+
 </body>
 </html>

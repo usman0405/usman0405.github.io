@@ -7,10 +7,21 @@
   
   <title>Ireland's Top Five Visitor Attractions</title>
   <meta name="description" content="The country's most popular atractions for visitors, according to the Irish Tourist Board.">
-  
-  
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+ 
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <style type="text/tailwindcss">
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
 header {
         @apply flex flex-col justify-around items-center w-full mx-auto
             bg-green-300
@@ -59,6 +70,13 @@ section img { @apply mb-5 rounded-[25px]; }
        hover:text-green-600
        focus:text-green-600
        transition-colors duration-300;
+    }
+        footer {
+        @apply bg-green-300 px-12 lg:px-68 py-8 text-center;
+    }
+
+    footer a {
+        @apply text-green-900 underline underline-offset-4 hover:text-green-700 focus:text-green-700;
     }
     </style>
     
@@ -138,6 +156,9 @@ section img { @apply mb-5 rounded-[25px]; }
 </section>
 
 </main>
+<footer>
+    <p><a href="../index.html">Back to Home page</a></p>
+</footer>
 
 </body>
 </html>
